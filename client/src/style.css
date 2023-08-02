@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 14px; /* Adjust this to fit our needs */
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #dc9931; /* Track color */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* Thumb color */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: gainsboro; /* Thumb color on hover */
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background-color: #2b7bbc; /* Thumb color when active (clicking) */
+}
+
+/* Create the custom track using pseudo-elements */
+html::-webkit-scrollbar-track:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px; /* Adjust this to fit as needed */
+  background-color: #ccc; /* Custom track color */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+html::-webkit-scrollbar-track:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px; /* Adjust this to fit as needed */
+  background-color: #ccc; /* Custom track color */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.app {
+  margin: auto;
+}
